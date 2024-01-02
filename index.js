@@ -3,8 +3,8 @@ async function fetchData(city)
 {
     
     try{
-        
-     const res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=292f704cab4cadba6d316dcbb83bd60d`)
+        //update API_key with a working API_key
+     const res=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid={API_Key}`)
      data= await res.json();
   
      if(data.cod===200)
