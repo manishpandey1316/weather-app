@@ -1,0 +1,138 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  height:100vh;
+  width:100vw;
+  background-color: rgb(36, 36, 36);
+  font-family: "Times New Roman", Times, serif;
+  align-items: center;
+  justify-content: center;
+}
+.section {
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+  background:linear-gradient(rgb(30, 132, 126),rgb(26, 89, 142));
+  height:max-content;
+  border-radius:1rem;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.search input{
+   height:2rem;
+   width:15rem;
+   border:transparent;
+   border-radius:2rem;
+   background-color:rgba(215, 214, 214, 0.9);
+   color:black;
+   text-align: center;
+   outline:none;
+   font-size: large;
+}
+.search button {
+  border:transparent;
+  padding:7px;
+ border-radius:50%;
+  background-color:rgba(215, 214, 214, 0.9);
+  cursor:pointer;
+}
+.search button img{
+  height:25px;
+  width:25px;
+  background:transparent;
+}
+.display{
+   display:flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+}
+.image {
+  height: 200px;
+  width: 200px;
+}
+.temp {
+  font-weight: bold;
+  font-size: 5rem;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.city {
+  font-size: 3rem;
+  color: rgb(230, 227, 227);
+}
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: antiquewhite;
+  gap:3rem;
+  margin-top:1rem;
+}
+.humidity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+}
+.humidity-logo {
+  background: url("/images/humidity.png");
+  height: 30px;
+  width: 35px;
+  background-size: 35px 30px;
+}
+.humidity-details {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.humidity-details span{
+   font-size:medium;
+}
+.wind {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:0.5rem;
+}
+.wind-logo {
+  background: url("/images/wind.png");
+  height: 30px;
+  width: 40px;
+  background-size: 40px 30px;
+}
+.wind-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.wind-details span{
+    font-size:medium;
+}
+.error{
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    display: none;
+}
